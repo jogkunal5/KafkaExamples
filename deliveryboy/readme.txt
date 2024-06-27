@@ -1,11 +1,17 @@
 Kafka:
 
 
-- Topic create command
-- Go to C:\WorkSpace\kafka_2.12-3.4.0\bin\windows>
-- Enter below command
+- Zookeper start command
 
-kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
+C:\WorkSpace\kafka_2.12-3.4.0>bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+- Kafka server start command:
+
+C:\WorkSpace\kafka_2.12-3.4.0>bin\windows\kafka-server-start.bat config\server.properties
+
+- Topic create command
+
+Go to C:\WorkSpace\kafka_2.12-3.4.0\bin\windows> kafka-topics.bat --create --topic user-topic --bootstrap-server localhost:9092
 
 Here user-topic is the name of topic.
 
